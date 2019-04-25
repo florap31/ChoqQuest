@@ -8,13 +8,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="237dp"
-        android:layout_height="53dp"
+        android:layout_width="328dp"
+        android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="580dp"
-        android:text="Favorites"
+        android:text="Submitted requests"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="35sp"

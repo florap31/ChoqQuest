@@ -85,13 +85,13 @@ public class Home extends Fragment {
 
             case R.id.chefCard:
 
-                Intent intent2 = new Intent(getContext(), Requests.class);
-                getContext().startActivity(intent2);
+                Intent intent2 = new Intent(getActivity(), Requests.class);
+                this.getActivity().startActivity(intent2);
                 break;
 
             case R.id.floatingActionButton:
-                Intent intent3 = new Intent(this.getContext(), Requests.class);
-                this.getContext().startActivity(intent3);
+                Intent intent3 = new Intent(this.getActivity(), Requests.class);
+                this.getActivity().startActivity(intent3);
 
                 break;
 
