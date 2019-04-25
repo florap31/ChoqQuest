@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chefCard"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="18dp"
+    android:background="@drawable/cardview"
+
+
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="28dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="419dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/threedots"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/threedots"
+            tools:srcCompat="@drawable/threedots" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/chefImage"
+            android:layout_width="76dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="28dp"
+
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/gordon"
+            tools:srcCompat="@tools:sample/avatars[1]" />
+
+        <TextView
+            android:id="@+id/chefName"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="5dp"
+            android:text="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/specialty"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="2dp"
+            android:text="Specialty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chefName" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="23dp"
+            android:text="Lorem ipsum dolor sit amet, consecteturadipiscing elit. "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chefName" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
